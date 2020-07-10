@@ -1,0 +1,37 @@
+.navbar-brand{
+    font-family: 'Modak', cursive;
+    font-size: 30px;
+}
+
+.pencet{
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron{
+    background-image: url(img/bgjumb.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+@media (min-width: 992px) { 
+.nav-link{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid green;
+    width: 50%;
+    margin-bottom: -10px;
+}
+
+.jumbotron{
+    margin-top: -75px;
+}
+
+.card{
+    width: auto;
+}
+
+}
