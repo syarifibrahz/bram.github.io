@@ -1,3 +1,8 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
 .navbar-brand{
     font-family: 'Modak', cursive;
     font-size: 30px;
@@ -10,10 +15,47 @@
 }
 
 .jumbotron{
-    background-image: url(img/bgjumb.jpg);
+    background-image: url(img/hero.jpg);
+    background-position-x: center;
     background-size: cover;
     height: 500px;
+    color: black; 
+    border-bottom: 10px solid #28a745;
+    position: relative;
 }
+
+.cta {
+    margin-top: 180px;
+}
+
+.display-4 {
+    font-weight: bold;
+    text-shadow: 5px 5px #28a745;
+}
+
+.lead {
+    color: #28a745;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1) rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+
 
 @media (min-width: 992px) { 
 .nav-link{
@@ -30,8 +72,15 @@
     margin-top: -75px;
 }
 
-.card{
-    width: auto;
+.container #card{
+    width: 700px;
+    margin: auto;
+}
 }
 
+/* footer */
+
+.footer {
+    background-color: black;
+    text-align: center;
 }
